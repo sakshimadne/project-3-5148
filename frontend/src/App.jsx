@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import Login from './Authpage/Login'
 import Register from './Authpage/Register'
-
+import AddCart from './pages/Addcart'
 import Navbar from './pages/Navbar'
 import Dashboard from './pages/Dashboard'
 import Feedback from './pages/Feedback'
@@ -35,6 +35,7 @@ const AppLayout = () => {
         <Route path='/explore-bundle' element={<BundleOffers />} />
         <Route path='/student-discount' element={<StudentDiscount />} />
         <Route path='/Category' element={<Bundles />} />
+        <Route path="/Addcart" element={<AddCart />} />
       </Routes>
       <Footer />
     </div>

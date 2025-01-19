@@ -281,7 +281,7 @@ const Dashboard = () => {
               <h3 style={{ background: 'white' }}>Brand: {selectedCard.brand}</h3>
               <p style={{ background: 'white' }}>{selectedCard.description}</p>
               <p style={{ background: 'white' }}>Price: ${selectedCard.price}</p>
-              <button className="buyNow">Buy Now</button>  <button onClick={() => addToCart(selectedCard)}>Add to Cart</button>
+              <button className="buyNow">Buy Now</button>  <button className="cartbut" onClick={() => addToCart(selectedCard)}>Add to Cart</button>
             </div> 
           </div>
         </div>

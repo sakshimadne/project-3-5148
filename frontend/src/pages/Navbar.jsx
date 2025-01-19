@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
+import logo from '../assets/logo.png'
 import './navbar.css';
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
     <>
       <nav>
         <div className="navbar">
-          <div className="logo">Logo</div>
+          <div className="logo"><img src={logo}  style={{height:30}}/></div>
           <div className="burger" onClick={toggleMenu}>
             ☰
           </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link to="/" className="Nav_links">Home</Link>
             <Link to="/Feedback" className="Nav_links">Feedback</Link>
             <Link to="/Category" className="Nav_links">Category</Link>
-
+            <Link to="/Addcart" className="Nav_links">🛒</Link>
           <div className="auth-buttons">
             {isAuthenticated ? (
               <button onClick={handleLogout}>Logout</button>

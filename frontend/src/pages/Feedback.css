@@ -26,9 +26,9 @@
     display: flex;
     z-index: 1000 ;
     justify-content:end;
-    width: 90%;
+    width: 100%;
     position: sticky;
-    top: 45px;
+    top: 50px;
     gap: 30px;
     background-color: rgb(34, 34, 51);
   }
