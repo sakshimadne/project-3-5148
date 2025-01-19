@@ -16,6 +16,8 @@ const Product = require('../models/productModel')
 //   }
 // }
 
+
+
 const getProducts = async (req, res) => {
   try {
     const { category, sort, priceRange, region } = req.query

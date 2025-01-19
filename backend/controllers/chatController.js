@@ -13,6 +13,9 @@
 //         chatHistory = new ChatHistory({ userId, messages: [] });
 //       }
 
+
+
+
 //       // Add user message to history
 //       chatHistory.messages.push({
 //         content: message,

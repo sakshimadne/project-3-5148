@@ -8,7 +8,10 @@ const {
   deleteProductById,
 } = require('../controllers/marketplaceController')
 
+
+
 const router = express.Router()
+
 
 router.get('/', getProducts)
 router.get('/category/:category', getProductsByCategory)

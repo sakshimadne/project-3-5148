@@ -12,6 +12,10 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 require('dotenv').config();
 const chatbot = require('./routes/chatRoutes')
 
+
+
+
+
 const app = express();
 
 // Connect to MongoDB
