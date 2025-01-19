@@ -1,0 +1,50 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card_E {
+    background-color: transparent;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 200px;
+    margin-top: 80px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out  ;
+    animation: fadeInText 2s ease-in-out, pulseGlow 3s infinite;
+    
+}
+
+.card_E:hover {
+    transform: scale(1.05);
+}
+
+.card_E h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card_E p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: rgb(19, 5, 5);
+}
+
+.explore-btn {
+    background-color: #0889d9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;
+}

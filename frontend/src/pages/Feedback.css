@@ -1,0 +1,349 @@
+.feedback_COntainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.feed-nav { 
+    background: url(https://t4.ftcdn.net/jpg/03/14/82/97/360_F_314829742_9J8iuJIH1vuz6Fa7RVb9xokmLGRGreMr.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: overlay; 
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .feed_img{
+    padding: 10px  100px; 
+    display: flex;
+    z-index: 1000 ;
+    justify-content:end;
+    width: 90%;
+    position: sticky;
+    top: 45px;
+    gap: 30px;
+    background-color: rgb(34, 34, 51);
+  }
+  
+  .feed-nav h1{
+    font-size: 45px;
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    animation: fadeInText 3s ease-in-out, pulseGlow 3s infinite;  
+  }
+  .feed-nav h2{
+    font-size: 25px;  
+    color: rgb(239, 240, 183);
+    animation: fadeInText 3s ease-in-out, pulseGlow 3s infinite;  
+  }
+
+
+  .feed-nav button:hover {
+    transform: scale(0.9);
+    background-color: #1b1b1d;
+  }
+ 
+  .feedback-container {
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feedback-container form input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+}
+form .lable_text{
+    font-size: 24px;
+}
+
+.stars {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.star {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+.star:hover {
+    color: #ffc107; 
+}
+.star.selected {
+    color: #ffc107; 
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* background-color: red; */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    margin: 15px auto;
+    font-weight: 600;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.guidelines {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-bottom: 200px;
+  }
+  
+  .flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* 3D perspective */
+    margin: 10px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Flip on hover */
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide back side when not visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg); /* Prepare the back face */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .flip-card {
+      width: 250px;
+      height: 180px;
+    }
+  
+    .flip-card-front,
+    .flip-card-back {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flip-card {
+      width: 220px;
+      height: 160px;
+    }
+  
+    .flip-card-front,
+    .flip-card-back {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flip-card {
+      width: 180px;
+      height: 140px;
+    }
+  
+    .flip-card-front,
+    .flip-card-back {
+      font-size: 12px;
+    }
+  }
+  
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .feed-nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .feedback-container {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .feedback-container form input,
+    textarea {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feed-nav {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .feedback-container {
+        width: 85%;
+        margin: 50px auto;
+        padding: 15px;
+    }
+
+    .stars {
+        gap: 8px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .stars {
+        gap: 5px;
+    }
+
+    .star {
+        font-size: 24px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    button[type="submit"] {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+.form_link{
+     color: white;
+     cursor: pointer;
+     padding: 10px;
+     transition: 0.3s;
+    border: 1px solid rgb(96, 89, 89); ;
+}
+
+.form_link:hover{
+background-color: rgb(96, 89, 89);
+}
+
+
+
+#User_Feedbacks {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+#User_Feedbacks h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.feed-list{
+   width: 90%;
+}
+
+.feedback-cards {
+  display: flex;
+ flex-direction: column;
+  gap: 20px;
+  width: auto
+}
+
+
+.feedback-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.feedback-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.feedback-name, .feedback-comments, .feedback-rating {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.feedback-card strong {
+  color: #222;
+  font-weight: bold;
+}
+
+
+.feedback-rating {
+  color: #f39c12; 
+  font-size: 18px;
+  font-weight: bold;
+}
