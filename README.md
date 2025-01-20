@@ -1,5 +1,5 @@
 <h2>Project Name ----> MIT Daily</h2>
-<h2>Tech Stack ----> Node, React, Firebase , Express , tailwind ,cs , axios , mongoDb</h2>
+<h2>Tech Stack ----> Node, React, Firebase , Express , tailwind ,Css , axios , mongoDb</h2>
 <h2>Node version ----> 22.12.0</h2>
 <h2>React version ----> 18.3.1</h2>
 <br/>
