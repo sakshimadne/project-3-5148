@@ -4,16 +4,19 @@
 <h2>React version ----> 18.3.1</h2>
 <br/>
 <br/>
-<h3>Description</h3>
-<h2>Welcome to MIT Daily – the premier e-commerce platform designed to connect students, faculty, and the broader community with<br/> high-quality products and innovative features. Our mission is to create a seamless and engaging shopping experience tailored<br/> to the unique needs of the MIT community and beyond.</h2>
-
 
 <h3>Team Member : </h3>
  <h3>Sheikh Faizan </h3>
  <h3>Sakshi </h3>
- <h3>Sunny Mourya : </h3>
+ <h3>Sunny Mourya </h3>
 <br/>
 <br/>
+
+<h3>Description</h3>
+<h2>Welcome to MIT Daily – the premier e-commerce platform designed to connect students, faculty, and the broader community with<br/> high-quality products and innovative features. Our mission is to create a seamless and engaging shopping experience tailored<br/> to the unique needs of the MIT community and beyond.</h2>
+
+
+
 
 <br/>
 <h2>Main Section of Home Page</h2>
